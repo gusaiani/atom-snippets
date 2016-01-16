@@ -127,10 +127,10 @@
     body: 'assert '
 
 '*':
-  "=":
-    prefix: "%"
-    body: "<% $1 %>"
+  '%':
+    prefix: '%'
+    body: '<% $1 %>'
 
-  "=":
-    prefix: "="
-    body: "<%= $1 %>"
+  '=':
+    prefix: '='
+    body: '<%= $1 %>'
