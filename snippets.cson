@@ -1,0 +1,136 @@
+# Gustavo Saiani’s Atom.io snippets
+'.source.js':
+  'console.log':
+    prefix: 'log'
+    body: 'console.log($1)'
+
+  'export function':
+    prefix: 'ef'
+    body: """
+    export function $1($2) {
+    \t$3
+    }
+    """
+
+  '.':
+    prefix: '.'
+    body: 'this.'
+
+  props:
+    prefix: 'props'
+    body: 'this.props'
+
+  porps:
+    prefix: 'porps'
+    body: 'this.props'
+
+  state:
+    prefix: 'state'
+    body: 'this.state'
+
+  'Debugger':
+    prefix: 'db'
+    body: 'debugger'
+
+  'Object.assign({}, state)':
+    prefix: 'oas'
+    body: 'Object.assign({}, state, {$1})'
+
+  "import React, {Component, PropTypes} from 'react'":
+    prefix: 'ircp'
+    body: "import React, {Component, PropTypes} from 'react'\n"
+
+  'this.setState':
+    prefix: 'setState'
+    body: 'this.setState($1)'
+
+  className:
+    prefix: 'cn'
+    body: 'className="$1"'
+
+  render:
+    prefix: 'render'
+    body: """
+    render() {
+    \t$1
+    }
+    """
+
+  label:
+    prefix: 'label'
+    body: '<label$1>$2</label>'
+
+  div:
+    prefix: 'div'
+    body: '<div$1>$2</div>'
+
+  span:
+    prefix: 'span'
+    body: '<span$1>$2</span>'
+
+  form:
+    prefix: 'form'
+    body: '<form$1>$2</form>'
+
+  button:
+    prefix: 'button'
+    body: '<button$1>$2</button>'
+
+  table:
+    prefix: 'table'
+    body: '<table$1>$2</table>'
+
+  tr:
+    prefix: 'tr'
+    body: """
+    <tr>
+    \t$1
+    </tr>
+    """
+
+  th:
+    prefix: 'th'
+    body: '<th>$1</th>'
+
+  td:
+    prefix: 'td'
+    body: '<td>$1</td>'
+
+  h1:
+    prefix: 'h1'
+    body: '<h1>$1</h1>'
+
+  p:
+    prefix: 'p'
+    body: '<p>$1</p>'
+
+'.source.php':
+  "?":
+    prefix: '?'
+    body: '<? $1 ?>'
+
+'.source.elixir':
+  changeset:
+    prefix: 'ch'
+    body: 'changeset'
+
+  for:
+    prefix: 'for'
+    body: 'for $1 <- $2 do\n\t$3\nend'
+
+  alter:
+    prefix: 'alter'
+    body: 'alter table $1 do \t\nend'
+
+  assert:
+    prefix: 'as'
+    body: 'assert '
+
+'*':
+  "=":
+    prefix: "%"
+    body: "<% $1 %>"
+
+  "=":
+    prefix: "="
+    body: "<%= $1 %>"
