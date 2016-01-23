@@ -114,10 +114,6 @@
     prefix: 'ch'
     body: 'changeset'
 
-  for:
-    prefix: 'for'
-    body: 'for $1 <- $2 do\n\t$3\nend'
-
   alter:
     prefix: 'alter'
     body: 'alter table $1 do \t\nend'
@@ -125,12 +121,3 @@
   assert:
     prefix: 'as'
     body: 'assert '
-
-'*':
-  '%':
-    prefix: '%'
-    body: '<% $1 %>'
-
-  '=':
-    prefix: '='
-    body: '<%= $1 %>'
