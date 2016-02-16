@@ -153,3 +153,11 @@
   'Enum.map':
     prefix: 'map'
     body: 'Enum.map($1)'
+
+  'Enum.each':
+    prefix: 'each'
+    body: 'Enum.each($1)'
+
+  'Enum.sort':
+    prefix: 'sort'
+    body: 'Enum.sort($1)'
