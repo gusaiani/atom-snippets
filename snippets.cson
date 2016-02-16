@@ -149,3 +149,7 @@
   for:
     prefix: 'for'
     body: 'for $1 <- $2 do\n\t$3\nend'
+
+  'Enum.map':
+    prefix: 'map'
+    body: 'Enum.map($1)'
