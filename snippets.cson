@@ -134,6 +134,18 @@
     prefix: 'dm'
     body: 'defmodule $1 do\n\t$2\nend'
 
+  'inline def':
+    prefix: 'id'
+    body: 'def $1, do: $2'
+
+  'inline defp':
+    prefix: 'idp'
+    body: 'defp $1, do: $2'
+
   '__MODULE__':
     prefix: 'mod'
     body: '__MODULE__'
+
+  for:
+    prefix: 'for'
+    body: 'for $1 <- $2 do\n\t$3\nend'
