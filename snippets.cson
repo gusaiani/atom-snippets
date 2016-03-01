@@ -1,5 +1,9 @@
 # Gustavo Saiani’s Atom.io snippets
 '.source.js':
+  'arrow function':
+    prefix: '=>'
+    body: '($1) => $2'
+
   'console.log':
     prefix: 'log'
     body: 'console.log($1)'
