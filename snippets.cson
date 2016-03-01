@@ -1,7 +1,7 @@
 # Gustavo Saiani’s Atom.io snippets
 '.source.js':
   'arrow function':
-    prefix: '=>'
+    prefix: 'af'
     body: '($1) => $2'
 
   'console.log':
