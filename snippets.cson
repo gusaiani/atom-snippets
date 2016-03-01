@@ -158,6 +158,10 @@
     prefix: 'each'
     body: 'Enum.each($1)'
 
+  'Enum.join':
+    prefix: 'join'
+    body: 'Enum.join($1)'
+
   'Enum.sort':
     prefix: 'sort'
     body: 'Enum.sort($1)'
