@@ -161,3 +161,15 @@
   'Enum.sort':
     prefix: 'sort'
     body: 'Enum.sort($1)'
+
+  'Enum.reduce':
+    prefix: 'reduce'
+    body: 'Enum.reduce($1)'
+
+  'inline def':
+    'prefix': 'idef'
+    'body': 'def $1, do: $2'
+
+  'inline defp':
+    'prefix': 'idefp'
+    'body': 'defp $1, do: $2'
