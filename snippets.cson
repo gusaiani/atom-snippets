@@ -146,6 +146,14 @@
     prefix: 'idp'
     body: 'defp $1, do: $2'
 
+  'IO.Puts':
+    prefix: 'ip'
+    body: 'IO.puts '
+
+  'IO.inspect':
+    prefix: 'ii'
+    body: 'IO.inspect '
+
   '__MODULE__':
     prefix: 'mod'
     body: '__MODULE__'
