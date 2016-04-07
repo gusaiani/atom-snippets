@@ -2,7 +2,7 @@
 '.source.js':
   'arrow function':
     prefix: 'af'
-    body: '($1) => $2'
+    body: '($1) => {$2}'
 
   'console.log':
     prefix: 'log'
