@@ -181,3 +181,7 @@
   'Enum.reduce':
     prefix: 'reduce'
     body: 'Enum.reduce($1)'
+
+  'Enum.any?':
+    prefix: 'any?'
+    body: 'Enum.any?'
