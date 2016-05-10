@@ -1,5 +1,9 @@
 # Gustavo Saiani’s Atom.io snippets
 '.source.js':
+  '.':
+    prefix: '.'
+    body: 'this.'
+
   'arrow function':
     prefix: 'af'
     body: '($1) => {$2}'
@@ -16,16 +20,16 @@
     }
     """
 
-  '.':
-    prefix: '.'
-    body: 'this.'
-
-  props:
-    prefix: 'props'
-    body: 'this.props'
+  map:
+    prefix: 'map'
+    body: '$1.map(($2) => {$3})'
 
   porps:
     prefix: 'porps'
+    body: 'this.props'
+
+  props:
+    prefix: 'props'
     body: 'this.props'
 
   state:
