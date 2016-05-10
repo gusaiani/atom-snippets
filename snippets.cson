@@ -14,7 +14,7 @@
 
   const:
     prefix: 'const'
-    body: 'const {$1} = $2'
+    body: 'const { $1 } = $2'
 
   'export function':
     prefix: 'ef'
@@ -26,7 +26,7 @@
 
   let:
     prefix: 'let'
-    body: 'let {$1} = $2'
+    body: 'let { $1 } = $2'
 
   map:
     prefix: 'map'
