@@ -12,6 +12,10 @@
     prefix: 'log'
     body: 'console.log($1)'
 
+  const:
+    prefix: 'const'
+    body: 'const {$1} = $2'
+
   'export function':
     prefix: 'ef'
     body: """
@@ -19,6 +23,10 @@
     \t$3
     }
     """
+
+  let:
+    prefix: 'let'
+    body: 'let {$1} = $2'
 
   map:
     prefix: 'map'
