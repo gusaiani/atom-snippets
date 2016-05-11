@@ -131,6 +131,10 @@
     body: '<? $1 ?>'
 
 '.source.elixir':
+  '_changeset':
+    prefix: '_ch'
+    body: '_changeset'
+
   changeset:
     prefix: 'ch'
     body: 'changeset'
