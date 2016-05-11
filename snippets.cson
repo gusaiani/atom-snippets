@@ -167,6 +167,10 @@
     prefix: 'idp'
     body: 'defp $1, do: $2'
 
+  'handle_in':
+    prefix: 'hi'
+    'body': 'def handle_in($1) do\n\t$2\nend'
+
   'IO.Puts':
     prefix: 'ip'
     body: 'IO.puts '
