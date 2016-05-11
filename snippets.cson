@@ -1,4 +1,9 @@
 # Gustavo Saiani’s Atom.io snippets
+'*':
+  '"""':
+    prefix: '"""'
+    body: '"""\n$1\n"""'
+
 '.source.js':
   '.':
     prefix: '.'
