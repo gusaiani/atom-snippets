@@ -4,6 +4,11 @@
     prefix: '"""'
     body: '"""\n$1\n"""'
 
+'.source.ruby':
+  'binding.pry':
+    prefix: 'bp'
+    body: 'binding.pry'
+
 '.source.js':
   '.':
     prefix: '.'
