@@ -156,6 +156,10 @@
     prefix: 'd'
     body: 'def $1 do\n\t$2\nend'
 
+  'def when':
+    prefix: 'dw'
+    body: 'def $1 when $2 do \n\t$3\nend'
+
   defmodule:
     prefix: 'defm'
     body: 'defmodule $1 do\n\t$2\nend'
