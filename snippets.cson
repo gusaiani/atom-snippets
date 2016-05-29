@@ -168,6 +168,42 @@
     prefix: 'dm'
     body: 'defmodule $1 do\n\t$2\nend'
 
+  'Enum.any?':
+    prefix: 'any?'
+    body: 'Enum.any?'
+
+  'Enum.each':
+    prefix: 'each'
+    body: 'Enum.each($1)'
+
+  'Enum.join':
+    prefix: 'join'
+    body: 'Enum.join($1)'
+
+  'Enum.map':
+    prefix: 'map'
+    body: 'Enum.map($1)'
+
+  'Enum.put':
+    prefix: 'put'
+    body: 'Enum.put($1)'
+
+  'Enum.reduce':
+    prefix: 'reduce'
+    body: 'Enum.reduce($1)'
+
+  'Enum.sort':
+    prefix: 'sort'
+    body: 'Enum.sort($1)'
+
+  'Enum.uniq':
+    prefix: 'uniq'
+    body: 'Enum.uniq($1)'
+
+  'handle_in':
+    prefix: 'hi'
+    'body': 'def handle_in($1) do\n\t$2\nend'
+
   'inline def':
     prefix: 'id'
     body: 'def $1, do: $2'
@@ -175,10 +211,6 @@
   'inline defp':
     prefix: 'idp'
     body: 'defp $1, do: $2'
-
-  'handle_in':
-    prefix: 'hi'
-    'body': 'def handle_in($1) do\n\t$2\nend'
 
   'IO.Puts':
     prefix: 'ip'
@@ -191,35 +223,3 @@
   '__MODULE__':
     prefix: 'mod'
     body: '__MODULE__'
-
-  for:
-    prefix: 'for'
-    body: 'for $1 <- $2 do\n\t$3\nend'
-
-  'Enum.map':
-    prefix: 'map'
-    body: 'Enum.map($1)'
-
-  'Enum.each':
-    prefix: 'each'
-    body: 'Enum.each($1)'
-
-  'Enum.join':
-    prefix: 'join'
-    body: 'Enum.join($1)'
-
-  'Enum.put':
-    prefix: 'put'
-    body: 'Enum.put($1)'
-
-  'Enum.sort':
-    prefix: 'sort'
-    body: 'Enum.sort($1)'
-
-  'Enum.reduce':
-    prefix: 'reduce'
-    body: 'Enum.reduce($1)'
-
-  'Enum.any?':
-    prefix: 'any?'
-    body: 'Enum.any?'
