@@ -176,6 +176,10 @@
     prefix: 'each'
     body: 'Enum.each($1)'
 
+  'Enum.filter':
+    prefix: 'filter'
+    body: 'Enum.filter($1)'
+
   'Enum.join':
     prefix: 'join'
     body: 'Enum.join($1)'
