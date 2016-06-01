@@ -192,6 +192,10 @@
     prefix: 'map'
     body: 'Enum.map($1)'
 
+  'Enum.member?':
+    prefix: 'member?'
+    body: 'Enum.member?($1)'
+
   'Enum.put':
     prefix: 'put'
     body: 'Enum.put($1)'
