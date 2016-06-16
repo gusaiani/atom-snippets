@@ -204,6 +204,10 @@
     prefix: 'reduce'
     body: 'Enum.reduce($1)'
 
+  'Enum.reject':
+    prefix: 'reject'
+    body: 'Enum.reject($1)'
+
   'Enum.sort':
     prefix: 'sort'
     body: 'Enum.sort($1)'
