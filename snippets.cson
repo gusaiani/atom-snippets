@@ -200,6 +200,10 @@
     prefix: 'put'
     body: 'Enum.put($1)'
 
+  'Enum.partition':
+    prefix: 'partition'
+    body: 'Enum.partition($1)'
+
   'Enum.reduce':
     prefix: 'reduce'
     body: 'Enum.reduce($1)'
