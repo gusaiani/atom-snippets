@@ -216,6 +216,10 @@
     prefix: 'sort'
     body: 'Enum.sort($1)'
 
+  'Enum.sum':
+    prefix: 'sum'
+    body: 'Enum.sum($1)'
+
   'Enum.uniq':
     prefix: 'uniq'
     body: 'Enum.uniq($1)'
