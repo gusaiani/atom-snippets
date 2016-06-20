@@ -212,6 +212,10 @@
     prefix: 'reject'
     body: 'Enum.reject($1)'
 
+  'Enum.shuffle':
+    prefix: 'shuffle'
+    body: 'Enum.shuffle($1)'
+
   'Enum.sort':
     prefix: 'sort'
     body: 'Enum.sort($1)'
