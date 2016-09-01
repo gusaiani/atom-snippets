@@ -255,3 +255,8 @@
   '__MODULE__':
     prefix: 'mod'
     body: '__MODULE__'
+
+'handlebars':
+    extends: 'html'
+    profile: 'handlebars'
+    filters: 'html'
