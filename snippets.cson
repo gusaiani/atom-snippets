@@ -9,7 +9,7 @@
     prefix: 'bp'
     body: 'binding.pry'
 
-'.source.js':
+'.source.js, .source.jsx, .source.ts, .source.js-semantic':
   '.':
     prefix: '.'
     body: 'this.'
@@ -17,6 +17,10 @@
   'arrow function':
     prefix: 'af'
     body: '($1) => {$2}'
+
+  className:
+    prefix: 'cn'
+    body: 'className="$1"'
 
   'console.log':
     prefix: 'log'
@@ -26,6 +30,10 @@
     prefix: 'const'
     body: 'const { $1 } = $2'
 
+  'Debugger':
+    prefix: 'db'
+    body: 'debugger'
+
   'export function':
     prefix: 'ef'
     body: """
@@ -33,6 +41,10 @@
     \t$3
     }
     """
+
+  "import React, {Component, PropTypes} from 'react'":
+    prefix: 'ircp'
+    body: "import React, {Component, PropTypes} from 'react'\n"
 
   let:
     prefix: 'let'
@@ -42,6 +54,10 @@
     prefix: 'map'
     body: 'map(($1) => {$2})'
 
+  'Object.assign({}, state)':
+    prefix: 'oas'
+    body: 'Object.assign({}, state, {$1})'
+
   porps:
     prefix: 'porps'
     body: 'this.props'
@@ -50,30 +66,6 @@
     prefix: 'props'
     body: 'this.props'
 
-  state:
-    prefix: 'state'
-    body: 'this.state'
-
-  'Debugger':
-    prefix: 'db'
-    body: 'debugger'
-
-  'Object.assign({}, state)':
-    prefix: 'oas'
-    body: 'Object.assign({}, state, {$1})'
-
-  "import React, {Component, PropTypes} from 'react'":
-    prefix: 'ircp'
-    body: "import React, {Component, PropTypes} from 'react'\n"
-
-  'this.setState':
-    prefix: 'setState'
-    body: 'this.setState($1)'
-
-  className:
-    prefix: 'cn'
-    body: 'className="$1"'
-
   render:
     prefix: 'render'
     body: """
@@ -81,6 +73,18 @@
     \t$1
     }
     """
+
+  state:
+    prefix: 'state'
+    body: 'this.state'
+
+  test:
+    prefix: 'test'
+    body: "test('$1', function($2) {\n\t$3\n});"
+
+  'this.setState':
+    prefix: 'setState'
+    body: 'this.setState($1)'
 
   label:
     prefix: 'label'
@@ -171,6 +175,10 @@
   'Enum.any?':
     prefix: 'any?'
     body: 'Enum.any?'
+
+  'Enum.at':
+    prefix: 'at'
+    body: 'Enum.at'
 
   'Enum.each':
     prefix: 'each'
