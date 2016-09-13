@@ -134,6 +134,11 @@
     prefix: 'p'
     body: '<p>$1</p>'
 
+'.source.json':
+  'new entry':
+    prefix: 'n'
+    body: '"$1": "$2",'
+
 '.source.php':
   "?":
     prefix: '?'
