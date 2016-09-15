@@ -42,6 +42,10 @@
     }
     """
 
+  f:
+    prefix: 'f'
+    body: 'function($1) {\n\t$2\n}'
+
   "import React, {Component, PropTypes} from 'react'":
     prefix: 'ircp'
     body: "import React, {Component, PropTypes} from 'react'\n"
