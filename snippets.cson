@@ -46,6 +46,14 @@
     }
     """
 
+  'export default':
+    prefix: 'ed'
+    body: """
+    export default $1({
+    \t$3
+    })
+    """
+
   f:
     prefix: 'f'
     body: 'function($1) {\n\t$2\n}'
