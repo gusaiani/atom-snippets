@@ -51,12 +51,16 @@
     body: """
     export default $1({
     \t$3
-    })
+    });
     """
 
   f:
     prefix: 'f'
     body: 'function($1) {\n\t$2\n}'
+
+  'inline-if':
+    prefix: 'iif'
+    body: 'if ($1) { $2; }'
 
   import:
     prefix: 'im'
