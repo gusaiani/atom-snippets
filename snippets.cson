@@ -271,7 +271,15 @@
 
   'handle_in':
     prefix: 'hi'
-    'body': 'def handle_in($1) do\n\t$2\nend'
+    body: 'def handle_in($1) do\n\t$2\nend'
+
+  'IEX.pry':
+    prefix: 'iex'
+    body: """
+    require IEx
+    IEx.pry
+
+    """
 
   'inline def':
     prefix: 'id'
