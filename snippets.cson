@@ -221,6 +221,10 @@
     prefix: 'filter'
     body: 'Enum.filter($1)'
 
+  'Enum.find':
+    prefix: 'find'
+    body: 'Enum.find($1)'
+
   'Enum.join':
     prefix: 'join'
     body: 'Enum.join($1)'
