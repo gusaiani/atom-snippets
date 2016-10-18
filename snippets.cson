@@ -18,6 +18,14 @@
     prefix: '(.'
     body: '(this.'
 
+  andThen:
+    prefix: 'at'
+    body: """
+    andThen(function() {
+      $1
+    });
+    """
+
   'arrow function':
     prefix: 'af'
     body: '($1) => {$2}'
