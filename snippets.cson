@@ -112,7 +112,7 @@
 
   test:
     prefix: 'test'
-    body: "test('$1', function(assert) {\n\t$2\n});"
+    body: "test('$1', function () {\n\t$2\n});"
 
   'this.setState':
     prefix: 'setState'
