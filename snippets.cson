@@ -86,6 +86,10 @@
     prefix: 'map'
     body: 'map(($1) => {$2})'
 
+  'new entry':
+    prefix: 'n'
+    body: "'$1': '$2',"
+
   'Object.assign({}, state)':
     prefix: 'oas'
     body: 'Object.assign({}, state, {$1})'
