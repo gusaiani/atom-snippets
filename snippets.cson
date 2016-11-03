@@ -181,14 +181,6 @@
     body: '<? $1 ?>'
 
 '.source.elixir':
-  '_changeset':
-    prefix: '_ch'
-    body: '_changeset'
-
-  changeset:
-    prefix: 'ch'
-    body: 'changeset'
-
   alter:
     prefix: 'alter'
     body: 'alter table $1 do \t\nend'
@@ -197,9 +189,17 @@
     prefix: 'as'
     body: 'assert '
 
+  '_changeset':
+    prefix: '_ch'
+    body: '_changeset'
+
+  changeset:
+    prefix: 'ch'
+    body: 'changeset'
+
   def:
     prefix: 'd'
-    body: 'def $1 do\n\t$2\nend'
+    body: 'def $1($2) do\n\t$3\nend'
 
   'def when':
     prefix: 'dw'
@@ -284,6 +284,10 @@
   'Enum.uniq':
     prefix: 'uniq'
     body: 'Enum.uniq($1)'
+
+  '## Examples':
+    prefix: 'ex'
+    body: '## Examples'
 
   'handle_in':
     prefix: 'hi'
