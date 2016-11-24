@@ -201,9 +201,17 @@
     prefix: 'd'
     body: 'def $1($2) do\n\t$3\nend'
 
+  defp:
+    prefix: 'dp'
+    body: 'defp $1($2) do\n\t$3\nend'
+
+  defpw:
+    prefix: 'dpw'
+    body: 'defp $1($2) when $3 do\n\t$4\nend'
+
   'def when':
     prefix: 'dw'
-    body: 'def $1 when $2 do \n\t$3\nend'
+    body: 'def $1($2) when $3 do \n\t$4\nend'
 
   defmodule:
     prefix: 'defm'
