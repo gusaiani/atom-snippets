@@ -203,11 +203,11 @@
 
   defimpl:
     prefix: 'defi'
-    body: 'defimpl $1, for: $2 do\n\t$2\nend'
+    body: 'defimpl $1, for: $2 do\n\t$3\nend'
 
   'defimpl via di':
     prefix: 'di'
-    body: 'defimpl $1, for: $2 do\n\t$2\nend'
+    body: 'defimpl $1, for: $2 do\n\t$3\nend'
 
   defp:
     prefix: 'dp'
