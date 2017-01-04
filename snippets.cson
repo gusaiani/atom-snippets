@@ -341,3 +341,8 @@
     extends: 'html'
     profile: 'handlebars'
     filters: 'html'
+
+'.source.elm':
+  'import':
+    prefix: 'im'
+    body: "import $1 ${2:exposing $3}"
